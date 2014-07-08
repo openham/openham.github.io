@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<title>OpenHam - Open Source Stuff for Amateur Radio</title>	 
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<!--[if lt IE 9]>
+	  <script src="js/html5shiv.js"></script>
+	  <script src="js/respond.min.js"></script>
+	<![endif]-->
+	<link rel="shortcut icon" href="images/favicon.png">
+	<script src="js/pace.js"></script>
+ 
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,600' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+	<div class="preloader"></div>
+	
+    <! -- ******************** MASTHEAD SECTION ******************** -->	
+	<main id="top" class="masthead" role="main">
+		<div class="container">
+			<div class="logo"> <a href="index.html#"><img src="images/logo.png" alt="logo"></a>
+			</div>
+ 
+			<h1><strong>Open Source</strong> Software<br>
+			for <strong>Amateur Radio</strong></h1>
+ 
+			<div class="row">
+				<div class="col-md-6 col-sm-12 col-md-offset-3 subscribe">
+					<form class="form-horizontal" role="form" action="subscribe.php" id="subscribeForm" method="POST">
+						<div class="form-group">
+							<div class="col-md-7 col-sm-6 col-sm-offset-1 col-md-offset-0">
+								<input class="form-control input-lg" name="email" type="email" id="address" placeholder="Enter your email" data-validate="validate(required, email)" required="required">
+							</div>
+							<div class="col-md-5 col-sm-4">
+								<button type="submit" class="btn btn-success btn-lg">GET EARLY ACCESS</button>
+							</div>
+						</div>
+					</form>
+					<span id="result" class="alertMsg"></span> </div>
+				</div>
+ 
+				<a href="index.html#explore" class="scrollto">
+				<p>SCROLL DOWN TO EXPLORE</p>
+				<p class="scrollto--arrow"><img src="images/scroll_down.png" alt="scroll down arrow"></p>
+				</a>
+		</div><! --/container -->
+	</main><! --/main -->
+ 
+	    <! -- ******************** PRICING LIST ******************** -->	  
+		<div class="container">
+ 
+			<div class="section-title">
+				<h2>Find out more.</h2>
+				<h4>OpenHam is still in its' early stages. You can discover more and contribute to its future!</h4>
+			</div>
+			<section class="row breath planpricing">
+			
+				<div class="col-md-4" onclick="window.location='http://www.reddit.com/r/OpenHam';">
+					<div class="pricing color1">
+						<div class="planname">Discussion</div>
+						<div class="price"><span class="per">REDDIT.COM</span>/r/OpenHam</div>
+						<div class="billing">Where you can read and discuss.</div>
+					</div><! --/pricing -->
+				</div><! --/col-md-4-->
+				
+				<div class="col-md-4" onclick="window.location='https://github.com/openham';">
+					<div class="pricing color2">
+						<div class="planname">Development</div>
+						<div class="price"><span class="per">GITHUB.COM/</span>OpenHam</div>
+						<div class="billing">Where you can see nuts and bolts.</div>
+					</div><! --/pricing -->
+				</div><! --/col-md-4-->
+				
+				<div class="col-md-4" onclick="window.location='http://flashirc.geekshed.net/tflash.php?embed=1&joinonconnect=openham';">
+					<div class="pricing color3">
+						<div class="planname">IRC</div>
+						<div class="price"><span class="per">IRC.GEEKSHED.NET</span>#OpenHam</div>
+						<div class="billing">Real-Time discussion and support.</div>
+					</div><! --/pricing -->
+				</div><! --/col-md-4-->
+			</section><!-- /section planpricing -->
+ 
+	    <! -- ******************** FOOTER ******************** -->	  
+		<div class="container">
+			<section class="row breath">
+				<div class="col-md-12 footerlinks">
+					<p>&copy; 2014 OpenHam.org. All Rights Reserved</p>
+				</div>
+			</section><! --/section -->
+		</div><! --/container -->
+ 
+ 
+ 
+ 
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/easing.js"></script>
+<script src="js/nicescroll.js"></script>
+ 
+ 
+<script>
+
+
+ $(function() {
+    $('.scrollto, .gototop').bind('click',function(event){
+		 var $anchor = $(this);
+		 $('html, body').stop().animate({
+         scrollTop: $($anchor.attr('href')).offset().top
+          }, 1500,'easeInOutExpo');
+     event.preventDefault();
+      });
+  });
+        
+
+</script>
+ 
+</body>
+</html>
