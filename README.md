@@ -1,1 +1,1 @@
-Why is this here?
+Our wonderful static website.
